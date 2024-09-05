@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Proyecto_8</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="timebox">
+
+            <h1 class="mensaje" id="mensaje">Faltan Para Navidad</h1>
+
+            <div class="cuentaRegresiva" id="cuentaRegresiva">
+                <label><p class="tiempo" id="dia">00</p><p>D</p></label>
+                <label><p class="tiempo" id="hora">00</p><p>H</p></label>
+                <label><p class="tiempo" id="minuto">00</p><p>M</p></label>
+                <label><p class="tiempo" id="segundo">00</p><p>S</p></label>
+            </div>
+
+            <div class="buttons">
+                <button id="play" onclick="bailar()">Play</button>
+                <button id="pause" onclick="pausar()">Pause</button>
+            </div>
+        </div>
+      
+        <div id="papaNoel"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

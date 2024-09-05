@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(87, 200, 220);
+    font-family: 'Quicksand', sans-serif;   
+    
+}
+
+.container, .cuentaRegresiva{
+    display: flex;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding-top: 10vh;
+}
+
+.tiempo{
+    
+    border: 1px solid white;
+    box-shadow: inset 0px 0px 2px 1px white;
+    border-radius: 50vh;
+    width: 5vh;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+label{
+    align-items: center ;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px ;
+    color: white;
+    font-weight: 500;
+}
+
+.timebox{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mensaje{
+    margin-bottom: 5vh;
+    color: rgb(233, 45, 45);
+}
+
+.buttons{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button{
+    font-size: 18px;
+    padding: 2%;
+    border-radius: 50vh;
+    width: 80px;
+    border: none;
+    margin-top: 10%;
+}
+
+.inactivado{
+    pointer-events: none;
+    background-color: white;
+    color: rgb(233, 45, 45);
+    font-weight: bolder;
+}
+
+.activado{
+    background-color: rgb(233, 45, 45);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.off{
+    width: 600px;
+    height: 500px;
+    background-repeat: none;
+    background-size: cover;
+    background-image: url("../img/papanoel.png");
+}
+
+.on{
+    width: 600px;
+    height: 500px;
+    background-repeat: none;
+    background-size: cover;
+    background-image: url("../img/baile.gif");
+}
+
+.activado:hover{
+    background-color: rgb(255, 101, 44);
+}
