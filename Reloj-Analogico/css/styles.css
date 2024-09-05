@@ -1,0 +1,98 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0E273C ;
+}
+
+/* Para el box shadow el inset pues es por dentro
+para los bordes = (ejex)(ejey)(difuminado)(como general) */
+.reloj{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/reloj.png);
+    background-size: cover;
+    border: 0.5rem solid #d67add;
+    border-radius: 50vh;
+    box-shadow: inset 0px 0px 20px 1px rgb(201, 111, 184);
+}
+
+/* se crea dentro del reloj pero no hace parte del html o sea no pero se crea es 
+dentro de reloj */
+.reloj::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #d9b7eb;
+    border-radius: 50vh;
+    z-index: 100;
+}
+
+.hora{
+    width: 130px;
+    height: 130px;
+}
+
+/* 30 grados */
+.hora::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: beige;
+    z-index: 10;
+    border-radius: 50vh;
+}
+
+.minuto{
+    width: 200px;
+    height: 200px;
+}
+
+
+/* 6 grados */
+.minuto::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 120px;
+    background-color: #d865e0;
+    z-index: 11;
+    border-radius: 50vh;
+}
+
+.segundo{
+    width: 250px;
+    height: 250px;
+}
+
+/* 6 grados */
+.segundo::before{
+    content: '';
+    position: absolute;
+    width: 1.8px;
+    height: 150px;
+    background-color: #6ad0ff;
+    z-index: 12;
+    border-radius: 50vh;
+}
+
+/* con esto hacemos que apunten hacia los doce, ya que lo tenemos todo centrado. */
+.hora, .minuto, .segundo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50vh;
+}

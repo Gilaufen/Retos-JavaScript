@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212738;
+}
+
+.barra{
+    background-color: #3e4456;
+    height: 45px;
+    width: 400px;
+    margin: 130px auto;
+    box-shadow:inset 6px 6px 12px #3e4456,
+            inset -6px -6px 12px #525f83;
+    overflow: hidden;
+    border: none;
+    border-radius: 20rem;
+}
+
+.progreso{
+    height: 100%;
+    width: 0;
+    background-color: #d90368;
+    box-shadow: 0 0 10px #d90368,
+                0 0 20px #d90368;
+    display: block;
+    border-radius: 20rem;
+}
+
+.porcentaje{
+    font-size: 2.5rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(100px);
+    color: #d90368;
+}
+
+body.celebracion{
+    background-image: url("../img/celebracion.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
